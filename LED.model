@@ -1,0 +1,38 @@
+.model Dled_test d
+
++IS = 1a
++RS=3.3
++N=1.8
+
+*random guesses
+*IS=18.8n
+*RS=0 
++BV=400 
++IBV=5.00u 
++CJO=30 
++M=0.333 
+*N=2
+
+*Diode Parameters
+
+*IS	IS	Saturation current (diode equation)		A	1E-14
+*RS	RS	Parsitic resistance (series resistance)		Ω	0
+*n	N	Emission coefficient, 1 to 2			-	1
+*τD	TT	Transit time					s	0
+*CD(0)	CJO	Zero-bias junction capacitance			F	0
+*φ0	VJ	Junction potential				V	1
+*m	M	Junction grading coefficient			-	0.5
+*-	-	0.33 for linearly graded junction		-	-
+*-	-	0.5 for abrupt junction				-	-
+*Eg	EG	Activation energy:				eV	1.11
+*-	-	Si: 1.11					-	-
+*-	-	Ge: 0.67					-	-
+*-	-	Schottky: 0.69					-	-
+*pi	XTI	IS temperature exponent				-	3.0
+*-	-	pn junction: 3.0				-	-
+*-	-	Schottky: 2.0					-	-
+*kf	KF	Flicker noise coefficient			-	0
+*af	AF	Flicker noise exponent				-	1
+*FC	FC	Forward bias depletion capacitance coefficient	-	0.5
+*BV	BV	Reverse breakdown voltage			V	∞
+*IBV	IBV	Reverse breakdown current			A	1E-3

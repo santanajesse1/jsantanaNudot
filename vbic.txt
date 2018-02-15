@@ -1,0 +1,112 @@
+PRAM   DESC                                                  UNITS  DEFAULT
+====   ====                                                  =====  =======
+AFN    B-E Flicker Noise Exponent.                                  1.0
+AJC    B-C capacitance smoothing factor.                            -0.5
+AJE    B-E capacitance smoothing factor.                            0.5
+AJS    S-C capacitance smoothing factor.                            -0.5
+ART    Smoothing parameter for reach-through.                       0.1
+AVC1   B-C weak avalanche parameter 1.                       1/V    0.0
+AVC2   B-C weak avalanche parameter 2.                       1/V    0.0
+BFN    B-E Flicker Noise 1/f dependence.                            1.0
+CBCO   Extrinsic B-C overlap capacitance.                    F      0.0
+CBEO   Extrinsic B-E overlap capacitance.                    F      0.0
+CCSO   Fixed C-S capacitance.                                F      0.0
+CJC    Zero bias B-C depletion capacitance.                  F      0.0
+CJCP   Zero bias S-C capacitance.                            F      0.0
+CJE    Zero bias B-E depletion capacitance.                  F      0.0
+CJEP   B-C extrinsic zero bias capacitance.                  F      0.0
+CTH    Thermal capacitance.                                  J/K    0.0
+DEAR   Delta activation energy for ISRR.                            0.0
+DTEMP  Local Temperature difference.                         ºC     0.0
+EA     Activation energy for IS.                             eV     1.12
+EAIC   Activation energy for IBCI/IBEIP.                     eV     1.12
+EAIE   Activation energy for IBEI.                           eV     1.12
+EAIS   Activation energy for IBCIP.                          eV     1.12
+EANC   Activation energy for IBCN/IBENP.                     eV     1.12
+EANE   Activation energy for IBEN.                           eV     1.12
+EANS   Activation energy for IBCNP.                          ev     1.12
+EAP    Exitivation energy for ISP.                           eV     1.12
+EBBE   exp(-VBBE/(NBBE*Vtv)).                                eV     0.0
+FC     Fwd bias depletion capacitance limit.                        0.9
+GAMM   Epi doping parameter.                                        0.0
+HRCF   High current RC factor.                                      1.0
+IBBE   B-E breakdown current.                                A      1e-6
+IBCI   Ideal B-C saturation current.                         A      1e-6
+IBCIP  Ideal parasitic B-C saturation current.               A      0.0
+IBCN   Non-ideal B-C saturation current.                     A      0.0
+IBCNP  Nonideal parasitic B-C saturation current.            A      0.0
+IBEI   Ideal B-E saturation current.                         A      1e-18
+IBEIP  Ideal parasitic B-E saturation current.               A      0.0
+IBEN   Non-ideal B-E saturation current.                     A      0.0
+IBENP  Non-ideal parasitic B-E saturation current.           A      0.0
+IKF    Forward knee current.                                 A      0.0
+IKP    Parasitic knee current.                               A      0.0
+IKR    Reverse knee current.                                 A      0.0
+IS     Transport saturation current.                         A      1e-16
+ISP    Parasitic transport saturation current.               A      0.0
+ISRR   Separate IS for fwd and rev.                          A      1.0
+ITF    High current dependence of TF.                        A      0.0
+KFN    B-E Flicker Noise Coefficient.                               0.0
+MC     B-C junction grading coefficient.                            0.33
+ME     B-E junction grading coefficient.                            0.33
+MS     S-C junction grading coefficient.                            0.33
+NBBE   B-E breakdown emission coefficient.                          1.0
+NCI    Ideal B-C emission coefficient.                              1.0
+NCIP   Ideal parasitic B-C emission coefficient.                    1.0
+NCN    Non-ideal B-C emission coefficient.                          2.0
+NCNP   Nonideal parasitic B-C emission coefficient.                 2.0
+NIE    Ideal B-E emission coefficient.                              1.0
+NEN    Non-ideal B-E emission coefficient.                          2.0
+NF     Forward emission coefficient.                                1.0
+NFP    Parasitic fwd emission coefficient.                          1.0
+NKF    High current beta rolloff.                                   0.5
+NR     Reverse emission coefficient.                                1.0
+PC     B-C built in potential.                               V      0.75
+PE     B-E built in potential.                               V      0.75
+PS     S-C junction built in potential.                      V      0.75
+QBM    Select SGP qb formulation.                                   0.0
+QCO    Epi charge parameter.                                 C      0.0
+QTF    Variation of TF with base-width modulation.                  0.0
+RBI    Intrinsic base resistance.                            Ω      0.1
+RBP    Parasitic base resistance.                            Ω      0.1
+RBX    Extrinsic base resistance.                            Ω      0.1
+RCI    Intrinsic collector resistance.                       Ω      0.1
+RCX    Extrinsic collector resistance.                       Ω      0.1
+RE     Intrinsic emitter resistance.                         Ω      0.1
+RS     Intrinsic substrate resistance.                       Ω      0.1
+RTH    Thermal resistance.                                   K/W    0.0
+TAVC   Temperature exponent of AVC2.                         1/K    0.0
+TD     Forward excess-phase delay time.                      s      0.0
+TF     Ideal forward transit time.                           s      0.0
+TNBBE  Temperature coefficient of NBBE.                             0.0
+TNF    Temperature exponent of NF.                           1/K    0.0
+TNOM   Parameter measurement temperature.                    ºC     27.0
+TR     Ideal reverse transit time.                           s      0.0
+TVBBE1 Linear temperature coefficient of VBBE.                      0.0
+TVBBE2 Quadratic temperature coefficient of VBBE.                   0.0
+VBBE   B-E breakdown voltage.                                V      0.0
+VEF    Forward Early voltage.                                V      0.0
+VER    Reverse Early voltage.                                V      0.0
+VERS   Revision Version.                                            1.2
+VO     Epi drift saturation voltage.                         V      0.0
+VREF   Reference Version.                                           0.0
+VRT    Punch-through voltage of internal B-C junction.       V      0.0
+VTF    Voltage giving VBC dependence of TF.                  V      0.0
+WBE    Portion of IBEI from Vbei, 1-WBE from Vbex.                  1.0
+WSP    Portion of ICCP.                                             1.0
+XII    Temperature exponent of IBEI, IBCI, IBEIP, IBCIP.            3.0
+XIKF   Temperature exponent of IKF.                                 0.0
+XIN    Temperature exponent of IBEN, IBCN, IBENP, IBCNP.            3.0
+XIS    Temperature exponent of IS.                                  3.0
+XISR   Temperature exponent of ISR.                                 0.0
+XRB    Temperature exponent of RB.                                  0.0
+XRBI   Temperature exponent of RBI.                                 0.0
+XRBP   Temperature exponent of RBP.                                 0.0
+XRBX   Temperature exponent of RBX.                                 0.0
+XRC    Temperature exponent of RC.                                  0.0
+XRCI   Temperature exponent of RCI.                                 0.0
+XRCX   Temperature exponent of RCX.                                 0.0
+XRE    Temperature exponent of RE.                                  0.0
+XRS    Temperature exponent of RS.                                  0.0
+XTF    Coefficient for bias dependence of TF.                       0.0
+XVO    Temperature exponent of VO.                                  0.0

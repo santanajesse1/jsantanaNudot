@@ -1,0 +1,44 @@
+puler LED operator
+
+vpulse 1 0 pulse (0 5 1n 10n 10n 100u)
+r1 1 2 100
+r2 2 0 1k
+r3 7 5 51
+r4 8 6 100k
+q1 5 2 0 npn4
+q2 6 7 5 npn4
+l1 9 0 .25u
+c1 9 6 5p
+vcc 8 0 dc 600
+d1 9 0 blue
+rground1 4 0 10g
+*rground is there in order to have node 4 connect to a ground by a DC line
+*not sure how to connect node 4 to a node 0 any other way
+
+.include blue.model
+.include npn4.model
+
+.ic v(1) = 0
+.ic v(0) = 0
+.ic v(2) = 0
+.ic v(4) = 0
+.ic v(5) = 0
+.ic v(6) = 0
+.ic v(7) = 0
+.ic v(8) = 600
+.ic v(9) = 0
+
+.save v(1) v(2) v(4) v(5) v(6) v(7) v(8) v(9) @d1[id]
+*.tran  10n 10000u
+.tran  .1n 5u
+.plot tran  v(1) v(2) v(4) v(5) v(6) v(7) v(8) v(9) @d1[id]
+* @r2[id] save & plot
+
+*view w/ plot i(@d1[id]) or plot v(4)
+
+.end
+
+.control
+run poster.raw
+.endc
+

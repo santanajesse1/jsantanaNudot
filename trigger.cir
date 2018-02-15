@@ -1,0 +1,29 @@
+trigger
+
+.include blue.model
+.include npn4.model 
+
+*.include ../models/npn4.mod
+*.include ../models/blue.mod
+
+
+r1 1 2 100
+r2 4 3 20k
+c1 3 5 10p
+q1 3 2 0 npn4
+d1 0 5 blue
+v4 4 0 dc 300
+v1 1 0  pulse (0 5 1u 10n 10n 100u)
+
+
+.ic v(3) = 0
+.ic v(2) = 0
+
+.save v(1) v(2) v(3) v(4) v(5) @d1[id]
+.tran  0.1n 2u
+.plot tran v(1) v(2) v(3) v(4) v(5) @d1[id] 
+.end
+
+.control
+run trigger.raw
+.endc

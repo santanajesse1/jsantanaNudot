@@ -1,0 +1,58 @@
+.model 2n3904L4 npn
+* VBIC model parameters generated from above data by perl script sgp2vbic
+* see http://www.designers-guide.org/VBIC/downloads.html
++ level=4
++ rcx  = 2.65711
++ rci  = 0.0
++ rbx  = 0.634251
++ rbi  = 5.203349
++ re   = 0.0001
++ is   = 1.26532e-10
++ nf   = 1.5
++ nr   = 2.89609
++ fc   = 0.512134
++ cje  = 4.64214e-12
++ pe   = 0.4
++ me   = 0.256227
++ cjc  = 3.015688e-12
++ cjep = 7.53922e-13
++ pc   = 0.4
++ mc   = 0.238109
++ cjcp = 0
++ ps   = 0.75
++ ms   = 0.5
++ ibei = 6.13333850374693e-13
++ nei  = 1.5
++ iben = 2.30771e-09
++ nen  = 3.31052
++ ibci = 6.13333850374693e-12
++ nci  = 2.89609
++ ibcn = 2.30771e-09
++ ncn  = 1.9876
++ vef  = 566.483710419377
++ ver  = 8.69028854282359
++ ikf  = 0.0272221
++ ikr  = 0.272221
++ tf   = 4.19578e-10
++ xtf  = 0.906167
++ vtf  = 8.75418
++ itf  = 0.0105823
++ tr   = 6.82023e-08
++ td   = 0
++ ea   = 1.05
++ eaie = 1.05
++ eaic = 1.05
++ eane = 1.05
++ eanc = 1.05
++ xis  = 1
++ xii  = 0.9
++ xin  = 0.668948
++ kfn  = 0
++ afn  = 1
+* avalanche parameters added according to
+* http://www.designers-guide.org/VBIC/documents/VbicText.pdf, page 13
+* You have to play with both parameters to obtain suitable description of real transistor behaviour!
+* This is just a guess!!
+*values are in npn4.model for avc1 and avc2 possibly others as well avc1=9 avc2=1*10^-5
+*+ avc1 = 0.02
+*+ avc2 = 110

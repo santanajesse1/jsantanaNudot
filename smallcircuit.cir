@@ -1,0 +1,25 @@
+Pulse generator
+r1 1 2 1meg
+r2 3 0 10k
+r3 4 0 50
+c1 2 0 2p
+q1 2 3 4 npn4
+va 1 0 dc 1000
+*va 1 0  pulse (0 1000 0 100N 100N 100u)
+
+.include 2n3904l4.model
+.include npn4.model
+
+.ic v(2) = 0
+.ic v(3) = 0
+.ic v(4) = 0
+
+
+.tran  0.1n 5u
+.plot tran  v(1) v(2) v(3) v(4)
+
+.end
+
+.control
+run smallcircuit.raw
+.endc
