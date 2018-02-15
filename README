@@ -1,0 +1,26 @@
+#   ssh jsantana@nudot1.lns.mit.edu
+
+#prints the 7 variables 
+snmpwalk -Cp -Oqv -v 2c -m +WIENER-CRATE-MIB -c public 198.125.161.201 crate
+
+##################################################
+
+   snmpset -v 2c -m +WIENER-CRATE-MIB -c guru 198.125.161.201 outputVoltage.u101 F 12
+#sets voltage for channel u101 to 12 V
+#prints " WIENER-CRATE-MIB::outputVoltage.u101 = Opaque: Float: 12.000000 V"
+
+#####################################################
+
+snmpget -v 2c -m +WIENER-CRATE-MIB -c public 198.125.161.201 outputVoltage.u101
+#gets/prints "WIENER-CRATE-MIB::outputVoltage.u101 = Opaque: Float: 12.000000 V"
+
+#########################################
+# option -Oqv suppresses "WIENER-CRATE-MIB::outputIndex.u0 = INTEGER:" eg for outputIndex
+# options -q "quick print for easier parsing", -v "print values only" -U "dont print units"
+#########################################
+
+#Status 0 off 1 on DO NOT TURN ON IF ALREADY ON
+########################################
+
+#end
+
